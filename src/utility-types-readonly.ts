@@ -18,3 +18,4 @@ const you: PersonalDataType = {
 };
 
 type MyReadType<T> = { readonly [P in keyof T]: T[P] };
+type test = MyReadType<Profile>;
